@@ -64,7 +64,7 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework',
     'social_django',
-    'inventory',
+    'inventory'
 ]
 
 
@@ -203,8 +203,14 @@ CKEDITOR_CONFIGS = {
             ['NumberedList', 'BulletedList', '-', 'Link', '-', 'Outdent', 'Indent', '-', 'Blockquote'],
             ['Maximize', 'Find', 'Replace'],
             ['Image', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe'],
+            ['Preview'],
         ],
-        'extraPlugins': 'blockquote'
+        'extraPlugins': ['blockquote'],
+        'coreStyles_bold' : { 'element': 'b'},
+        'contentsCss': [
+            'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css',
+            '/static/website/css/ckeditor.css'
+        ],
     },
     'tos_editor': {
         'width': '100%',

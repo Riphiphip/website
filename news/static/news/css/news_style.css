@@ -96,3 +96,11 @@ strong {
 	padding: 4px 6px;
 	border-radius: 2px;
 }
+
+.draft-indicator {
+	font-size: 16px;
+	padding: 6px 6px;
+	border-radius: 2px;
+	text-align: center;
+	margin-top: 0;
+}
